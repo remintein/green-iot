@@ -1,0 +1,51 @@
+﻿        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Manager Server</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <a [routerLink] = "['../server-add']" class="btn btn-primary btn-add">Add server</a>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                   
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            List server
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Server Code</th>
+                                            <th>Server Name</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor = "let item of allServer">
+                                            <td>1</td>
+                                            <td>{{item.code}}</td>
+                                            <td>{{item.server}}</td>
+                                            <td>
+                                                <a type="button" class="btn btn-primary" [routerLink] = "['../server/', item._id]"><i class="fa fa-gear fa-fw"></i></a>
+                                                <button type="button" class="btn btn-danger" (click)="deleteServer(item.code)"><i class="fa fa-times fa-fw "></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>

@@ -1,0 +1,54 @@
+﻿        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Manager Users</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <a [routerLink] = "['../user-add']" class="btn btn-primary btn-add">Add user</a>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                   
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            List users
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Email</th>
+                                            <th>Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor = "let item of allUser">
+                                            <td>1</td>
+                                            <td>{{item.firstName}}</td>
+                                            <td>{{item.lastName}}</td>
+                                            <td>{{item.email}}</td>
+                                            <td>{{item.username}}</td>
+                                            <td>
+                                                <a type="button" class="btn btn-primary" [routerLink] = "['../user/', item._id]"><i class="fa fa-gear fa-fw"></i></a>
+                                                <button type="button" class="btn btn-danger" (click)="deleteUser(item._id)"><i class="fa fa-times fa-fw "></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>

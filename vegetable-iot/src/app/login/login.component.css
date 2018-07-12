@@ -1,0 +1,27 @@
+.col-md-12{
+	margin-top: 180px;
+}
+#formlogin{
+	border-style: groove;
+	border-color: grey;
+	border-radius: 5px;
+	background-color: grey;
+}
+h2{
+	padding-top: 7px;
+	padding-bottom: 7px;
+	text-align: center;
+}
+.form-group{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.a{
+	align-content: center;
+	margin-left: 110px;
+}
+
+button.btn.btn-primary {
+    width: 102px;
+    margin-left: 36px;
+}

@@ -1,0 +1,20 @@
+{ "users":[
+    {
+        "_id":{"$oid":"59a6d36bf36d284c08d28814"},
+        "username":"admin",
+        "hash":"$2a$10$WeDUC06zRxXAIOKVcPGXIeAeB1oTOcz9MmRwdIAaX54JCou8mFBaW",
+        "firstName":"Uit",
+        "lastName":"Team",
+        "email":"chinhhuynhkhac@gmail.com",
+        "is_email":0
+    },
+    {
+        "_id":{"$oid":"59a6e8a919a9a10004c7c98e"},
+        "firstName":"SMART",
+        "lastName":"GREEN",
+        "email":"iot.vtgcorp@gmail.com",
+        "username":"saladcanfly",
+        "hash":"$2a$10$Vd8GtPopn5jlOgiP/fWXKOLXPz.FvtvkgZccER7bnwYRgC1.b2eB.",
+        "is_email":1
+    }
+]}

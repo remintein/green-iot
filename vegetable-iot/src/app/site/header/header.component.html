@@ -1,0 +1,42 @@
+﻿<nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand row" href="index.html"><img src="/assets/img/logo.png" alt=""> <strong>SMARTGREEN IOT CONTROL SYSTEM</strong></a>
+            </div>
+            
+            <ul class="nav navbar-top-links navbar-right">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <li><span class="username">{{username}}</span></li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a [routerLink] = "['./qrcode']"><i class="fa fa-gear fa-fw"></i> QR Code</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a [routerLink] = "['../login']"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+        </nav>
+
+        <nav class="navbar-default navbar-side col-sm-12 col-xs-12" role="navigation">
+		<div id="sideNav" href=""><i class="fa fa-caret-right"></i></div>
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li *ngFor = "let item of servers">
+                        <a [routerLink] = "['./server-detail', item.code]"><i class="fa fa-fw fa-file"></i>{{item.server}}</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>

@@ -1,0 +1,47 @@
+.row.title_text {
+    text-align: center;
+}
+
+.row.title_text span{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+chart{
+    display: block;
+}
+
+/* .OPEN{
+    background-color: #a9eebc;
+    padding: 5px;
+    color: #0d6215;
+    padding-right: 45px;
+}
+
+.ERROR{
+    background-color: #8d8989;
+    padding: 5px;
+    color: white;
+    padding-right: 20px;
+} */
+
+.row.chart {
+    border: 2px solid #565151;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.col-lg-12.main-chart {
+    /* bottom: 37px; */
+    margin-bottom: 60px;
+}
+/* .CLOSE {
+    float: none;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: none;
+    filter: alpha(opacity=20);
+    opacity: 0.5;
+} */

@@ -1,0 +1,6 @@
+{"climates":[
+{"_id":{"$oid":"5a7b2c5470e58e0004e1da1a"},"server":"KCN Cát Lái - K1","code":"CTL1","cli_view_temp":"34.35","cli_view_humi":"58.84","cli_view_light":"0.00","cli_view_co2":"0.00","cli_stt_fan":"FULL","cli_stt_cooling":"CLOSE","cli_stt_nozzle":"OPEN","cli_stt_shadingNet":"NW","cli_stt_ventDoor":"NW"},
+{"_id":{"$oid":"5a7b2c6c70e58e0004e1da1e"},"server":"KCN Cát Lái - K3","code":"CTL2","cli_view_temp":"33.24","cli_view_humi":"58.19","cli_view_light":"022580","cli_view_co2":"0.00","cli_stt_fan":"FULL","cli_stt_cooling":"CLOSE","cli_stt_nozzle":"NW","cli_stt_shadingNet":"OPEN","cli_stt_ventDoor":"NW"},
+{"_id":{"$oid":"5a7b2c8670e58e0004e1da22"},"server":"KCN Cát Lái - K4","code":"CTL3","cli_view_temp":"35.18","cli_view_humi":"55.98","cli_view_light":"022597","cli_view_co2":"0.00","cli_stt_fan":"FULL","cli_stt_cooling":"CLOSE","cli_stt_nozzle":"NW","cli_stt_shadingNet":"OPENING","cli_stt_ventDoor":"NW"},
+{"_id":{"$oid":"5a7b2c9870e58e0004e1da26"},"server":"Container","code":"CTL4","cli_view_temp":"24.33","cli_view_humi":"70.86","cli_view_light":"000042","cli_view_co2":"0.00","cli_stt_fan":"NW","cli_stt_cooling":"NW","cli_stt_nozzle":"NW","cli_stt_shadingNet":"NW","cli_stt_ventDoor":"NW"}
+]}

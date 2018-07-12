@@ -1,0 +1,61 @@
+{
+  "name": "angular-heroku",
+  "version": "0.0.0",
+  "license": "MIT",
+  "angular-cli": {},
+  "scripts": {
+    "start": "node server.js",
+    "lint": "tslint \"src/**/*.ts\"",
+    "test": "ng test",
+    "pree2e": "webdriver-manager update",
+    "e2e": "protractor",
+    "postinstall": "ng build --aot -prod",
+    "deploy": "git push origin master && git push heroku master"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "2.4.1",
+    "@angular/compiler": "2.4.1",
+    "@angular/compiler-cli": "2.4.1",
+    "@angular/core": "2.4.1",
+    "@angular/forms": "2.4.1",
+    "@angular/http": "2.4.1",
+    "@angular/platform-browser": "2.4.1",
+    "@angular/platform-browser-dynamic": "2.4.1",
+    "@angular/router": "3.2.3",
+    "@ngtools/webpack": "^1.2.1",
+    "@types/highcharts": "^4.2.56",
+    "@types/socket.io-client": "^1.4.29",
+    "angular-cli": "latest",
+    "bootstrap": "^3.3.7",
+    "core-js": "^2.4.1",
+    "express": "^4.14.0",
+    "rxjs": "5.0.0-beta.12",
+    "socket.io-client": "^2.0.3",
+    "ts-helpers": "^1.1.1",
+    "zone.js": "^0.6.23"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.1.1",
+    "@types/jasmine": "2.5.38",
+    "@types/node": "^6.0.42",
+    "@types/socket.io-client": "^1.4.29",
+    "codelyzer": "~2.0.0-beta.1",
+    "jasmine-core": "2.5.2",
+    "jasmine-spec-reporter": "2.5.0",
+    "karma": "1.2.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-remap-istanbul": "^0.2.1",
+    "protractor": "4.0.9",
+    "ts-node": "1.2.1",
+    "tslint": "^4.0.2",
+    "typescript": "~2.0.3",
+    "webdriver-manager": "10.2.5"
+  },
+  "engines": {
+    "node": "6.9.2",
+    "npm": "3.10.9"
+  }
+}

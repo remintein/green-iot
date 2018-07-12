@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @media only screen and (max-device-width: 480px) {
+        /* mobile-specific CSS styles go here */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main" style="text-align: center;">
+      <table height="537" style="width: 786.4px;">
+        <tbody>
+          <tr style="height: 54px; background-color: #2ecc71;">
+            <td style="width: 763.4px; height: 54px;"><strong><span style="color: #ffffff; font-size: 18pt;">SMARTGREEN IOT CONTROL SYSTEM</span></strong></td>
+          </tr>
+          <tr style="height: 34px; background-color: #e74c3c;">
+            <td style="width: 763.4px; height: 34px; text-align: center;"><span style="color: #ffffff;"><strong><span style="font-size: 14pt;">(EMERGENCY) SMARTGREEN IOT CONTROL SYSTEM</span></strong></span></td>
+          </tr>
+          <tr style="height: 126px;">
+            <td style="width: 763.4px; height: 126px;">
+              <p style="text-align: center;"><span style="font-size: 18pt; color: #2ecc71;"><strong>Climate Control</strong></span></p>
+              <table width="357" height="237" style="margin-left: auto; margin-right: auto;">
+                <tbody>
+                  <tr>
+                    <td style="width: 151.6px; text-align: left;"><strong>Name</strong></td>
+                    <td style="width: 154.8px; text-align: center;"><strong>Status</strong></td>
+                  </tr>
+                  <tr>
+                    <td style="width: 151.6px; text-align: left;"><strong>FAN</strong></td>
+                    <td style="width: 154.8px; text-align: center;">{{cli_stt_fan}}</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 151.6px; text-align: left;"><strong>Cooling Pump</strong></td>
+                    <td style="width: 154.8px; text-align: center;">{{cli_stt_cooling}}</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 151.6px; text-align: left;"><strong>Nozzle Pump</strong></td>
+                    <td style="width: 154.8px; text-align: center;">{{cli_stt_nozzle}}</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 151.6px; text-align: left;"><strong>Shading Net System</strong></td>
+                    <td style="width: 154.8px; text-align: center;">{{cli_stt_shadingNet}}</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 151.6px; text-align: left;"><strong>Vent Door</strong></td>
+                    <td style="width: 154.8px; text-align: center;">{{cli_stt_ventDoor}}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br />
+              <p style="text-align: center;"><span style="font-size: 18pt; color: #2ecc71;"><strong></strong></span></p>
+              <p style="text-align: center;"><span style="font-size: 10pt; color: #ffffff; background-color: #27ae60;"><strong>Sent from {{code}}({{server}})</strong></span></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

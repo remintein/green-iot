@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @media only screen and (max-device-width: 480px) {
+        /* mobile-specific CSS styles go here */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <table width="822">
+        <tbody>
+          <tr style="height: 54.6px; background-color: #2ecc71;">
+            <td style="width: 794.8px; height: 54.6px; text-align: center;"><strong><span style="color: #ffffff; font-size: 18pt;">SMARTGREEN IOT CONTROL SYSTEM</span></strong></td>
+          </tr>
+          <tr style="height: 34px; background-color: #27ae60;">
+            <td style="width: 794.8px; height: 34px; text-align: center;"><strong><span style="font-size: 12pt; color: #ffffff;">(DAILY) SMARTGREEN IOT CONTROL SYSTEM</span></strong></td>
+          </tr>
+          <tr style="height: 126px;">
+            <td style="width: 794.8px; height: 126px;">
+              <p style="text-align: center;"><span style="font-size: 18pt; color: #2ecc71;"><strong>Climate Control</strong></span></p>
+              <table width="626" style="margin-left: auto; margin-right: auto;">
+                <tbody>
+                  <tr style="height: 12px;">
+                    <td style="width: 183.6px; height: 12px;"><strong>Name</strong></td>
+                    <td style="width: 183.6px; height: 12px; text-align: center;"><strong>Min</strong></td>
+                    <td style="width: 184.4px; height: 12px; text-align: center;"><strong>Max</strong></td>
+                  </tr>
+                  <tr style="height: 12px;">
+                    <td style="width: 183.6px; height: 12px;"><strong>Environment Temperature</strong></td>
+                    <td style="width: 183.6px; height: 12px; text-align: center;"><strong>{{temp_min_day}} ℃</strong></td>
+                    <td style="width: 184.4px; height: 12px; text-align: center;"><strong>{{temp_max_day}} ℃</strong></td>
+                  </tr>
+                  <tr style="height: 12px;">
+                    <td style="width: 183.6px; height: 12px;"><strong>Environment Huminity</strong></td>
+                    <td style="width: 183.6px; height: 12px; text-align: center;"><strong>{{humi_min_day}} %</strong></td>
+                    <td style="width: 184.4px; height: 12px; text-align: center;"><strong>{{humi_max_day}} %</strong></td>
+                  </tr>
+                  <tr style="height: 12.4px;">
+                    <td style="width: 183.6px; height: 12.4px;"><strong>Light Intensity</strong></td>
+                    <td style="width: 183.6px; height: 12.4px; text-align: center;"><strong>{{light_min_day}} Cd</strong></td>
+                    <td style="width: 184.4px; height: 12.4px; text-align: center;"><strong>{{light_max_day}} Cd</strong></td>
+                  </tr>
+                  <tr style="height: 12px;">
+                    <td style="width: 183.6px; height: 12px;"><strong>CO2 Injection</strong></td>
+                    <td style="width: 183.6px; height: 12px; text-align: center;"><strong>{{co2_min_day}} ppm</strong></td>
+                    <td style="width: 184.4px; text-align: center; height: 12px;"><strong>{{co2_max_day}} ppm</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="text-align: center;"><span style="font-size: 18pt; color: #2ecc71;"><strong>Irrigation Control</strong></span></p>
+              <table style="width: 622px; margin-left: auto; margin-right: auto;">
+                <tbody>
+                  <tr style="height: 13px;">
+                    <td style="width: 182px; height: 13px; text-align: left;"><strong>Name</strong></td>
+                    <td style="width: 182.8px; height: 13px; text-align: center;"><strong>Min </strong></td>
+                    <td style="width: 182.8px; height: 13px; text-align: center;"><strong>Max</strong></td>
+                  </tr>
+                  <tr style="height: 12px;">
+                    <td style="width: 182px; height: 12px; text-align: left;"><strong>PH</strong></td>
+                    <td style="width: 182.8px; height: 12px; text-align: center;"><strong>{{ph_min_day}}</strong></td>
+                    <td style="width: 182.8px; height: 12px; text-align: center;"><strong>{{ph_max_day}}</strong></td>
+                  </tr>
+                  <tr style="height: 12px;">
+                    <td style="width: 182px; height: 12px; text-align: left;"><strong>EC</strong></td>
+                    <td style="width: 182.8px; height: 12px; text-align: center;"><strong>{{ec_min_day}}</strong></td>
+                    <td style="width: 182.8px; height: 12px; text-align: center;"><strong>{{ec_max_day}}</strong></td>
+                  </tr>
+                  <tr style="height: 12.2px;">
+                    <td style="width: 182px; height: 12.2px; text-align: left;"><strong>Water Temperature</strong></td>
+                    <td style="width: 182.8px; height: 12.2px; text-align: center;"><strong>{{waterTemp_min_day}}   ℃</strong></td>
+                    <td style="width: 182.8px; height: 12.2px; text-align: center;"><strong>{{waterTemp_max_day}} ℃</strong></td>
+                  </tr>
+                  <tr style="height: 12px;">
+                    <td style="width: 182px; height: 12px; text-align: left;"><strong>Oxygen Concentration In Water</strong></td>
+                    <td style="width: 182.8px; height: 12px; text-align: center;"><strong>{{OxygenConc_min_day}} ppm</strong></td>
+                    <td style="width: 182.8px; height: 12px; text-align: center;"><strong>{{OxygenConc_max_day}} ppm</strong></td>
+                  </tr>
+
+                  <tr style="height: 12px;">
+                    <td style="width: 182px; height: 12px; text-align: left;"><strong>Nutrition A Level</strong></td>
+                    <td style="width: 182.8px; height: 12px; text-align: center;"><strong>{{nutrition_a_min_day}} ppm</strong></td>
+                    <td style="width: 182.8px; height: 12px; text-align: center;"><strong>{{nutrition_a_max_day}} ppm</strong></td>
+                  </tr>
+                  <tr style="height: 12px;">
+                    <td style="width: 182px; height: 12px; text-align: left;"><strong>Nutrition B Level</strong></td>
+                    <td style="width: 182.8px; height: 12px; text-align: center;"><strong>{{nutrition_b_min_day}} ppm</strong></td>
+                    <td style="width: 182.8px; height: 12px; text-align: center;"><strong>{{nutrition_b_max_day}} ppm</strong></td>
+                  </tr>
+                  <tr style="height: 12px;">
+                    <td style="width: 182px; height: 12px; text-align: left;"><strong>PH Level</strong></td>
+                    <td style="width: 182.8px; height: 12px; text-align: center;"><strong>{{ph_level_min_day}} ppm</strong></td>
+                    <td style="width: 182.8px; height: 12px; text-align: center;"><strong>{{ph_level_max_day}} ppm</strong></td>
+                  </tr>
+                  <tr style="height: 12px;">
+                    <td style="width: 182px; height: 12px; text-align: left;"><strong>Water Tank Level</strong></td>
+                    <td style="width: 182.8px; height: 12px; text-align: center;"><strong>{{water_tank_level_min_day}} ppm</strong></td>
+                    <td style="width: 182.8px; height: 12px; text-align: center;"><strong>{{water_tank_level_max_day}} ppm</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="text-align: center;"><span style="font-size: 10pt; color: #ffffff; background-color: #27ae60;"><strong>Sent from {{server}}</strong></span></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+﻿        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Manager QR Code</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 col-sm-6" style="padding-left:15px;">
+                            <div class="col-lg-12">
+                            <p>Enter data to create QRCode</p>
+                            <textarea  class="form-control text-qrcode" name="qrcode" [(ngModel)]="model.qrcode_text" rows="5" cols="4"  placeholder="Qrcode text"></textarea>
+                            </div>
+                            <div class="col-lg-12">
+                                <input type="file" id="myFile" class="btn btn-info btn-qrcode  " size="10" (change)="uploadLogo()" accept="image/gif, image/jpeg, image/png">
+                                <img id="new_logo" src="#" style="display:none;">
+                            </div>
+                            <div class="col-lg-12">
+                                <button type="button" class="btn btn-info btn-h " (click)="createQRCode()">Create QRCode    </button>
+                            </div>
+                            <div class="col-lg-12">
+                                <a class="btn btn-info btn-h" href="#" target="_blank" #downloadLink (click)="downloadQRCode(downloadLink)">Download QRCode</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5 col-sm-6 col-xs-12 content-qrcode">
+                            <div id="qrcode" class="qrcode"></div>
+                        </div>
+                    </div>
+                    <div class="row main-qrcode">
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+            <app-footer></app-footer>
+        </div>

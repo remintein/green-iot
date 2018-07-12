@@ -1,0 +1,5 @@
+﻿{
+    "connectionString": "mongodb://chinhhuynh:concacanh123@ds129442.mlab.com:29442/heroku_1wtkdlsh",
+    "apiUrl": "http://localhost:4000",
+    "secret": "vegetable"
+}

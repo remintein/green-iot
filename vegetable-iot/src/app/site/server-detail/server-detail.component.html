@@ -1,0 +1,245 @@
+﻿        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">{{arrClimate?.server}}</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                   
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3>Climate Control</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                  <tr class="info">
+                                    <th>Name</th>
+                                    <th>Value</th>
+                                    <th>Min day</th>
+                                    <th>Max day</th>
+                                    <th>Min month</th>
+                                    <th>Max month</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="active">
+                                    <td>Environment Temperature</td>
+                                    <td>{{arrClimate?.cli_view_temp}} &#8451;</td>
+                                    <td>{{arrClimateLog?.temp_min_day}} &#8451;</td>
+                                    <td>{{arrClimateLog?.temp_max_day}} &#8451;</td>
+                                    <td>{{arrClimateLog?.temp_min_month}} &#8451;</td>
+                                    <td>{{arrClimateLog?.temp_max_month}} &#8451;</td>
+                                  </tr>
+                                  <tr >
+                                    <td>Environment Huminity</td>
+                                    <td>{{arrClimate?.cli_view_humi}} %</td>
+                                    <td>{{arrClimateLog?.humi_min_day}} %</td>
+                                    <td>{{arrClimateLog?.humi_max_day}} %</td>
+                                    <td>{{arrClimateLog?.humi_min_month}} %</td>
+                                    <td>{{arrClimateLog?.humi_max_month}} %</td>
+                                  </tr>
+                                  <tr class="active">
+                                    <td>Light Intensity</td>
+                                    <td>{{arrClimate?.cli_view_light}} Lux</td>
+                                    <td>{{arrClimateLog?.light_min_day}} Lux</td>
+                                    <td>{{arrClimateLog?.light_max_day}} Lux</td>
+                                    <td>{{arrClimateLog?.light_min_month}} Lux</td>
+                                    <td>{{arrClimateLog?.light_max_month}} Lux</td>
+                                  </tr>
+                                  <tr >
+                                    <td>CO2 Injection</td>
+                                    <td>{{arrClimate?.cli_view_co2}} ppm</td>
+                                    <td>{{arrClimateLog?.co2_min_day}} ppm</td>
+                                    <td>{{arrClimateLog?.co2_max_day}} ppm</td>
+                                    <td>{{arrClimateLog?.co2_min_month}} ppm</td>
+                                    <td>{{arrClimateLog?.co2_max_month}} ppm</td>
+                                  </tr>
+                                  <tr class="active">
+                                    <td>FAN</td>
+                                    <td><span class="{{arrClimate?.cli_stt_fan}}">{{arrClimate?.cli_stt_fan}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_fan}}">{{arrClimate?.cli_stt_fan}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_fan}}">{{arrClimate?.cli_stt_fan}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_fan}}">{{arrClimate?.cli_stt_fan}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_fan}}">{{arrClimate?.cli_stt_fan}}</span> </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Cooling Pump</td>
+                                    <td><span class="{{arrClimate?.cli_stt_cooling}}">{{arrClimate?.cli_stt_cooling}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_cooling}}">{{arrClimate?.cli_stt_cooling}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_cooling}}">{{arrClimate?.cli_stt_cooling}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_cooling}}">{{arrClimate?.cli_stt_cooling}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_cooling}}">{{arrClimate?.cli_stt_cooling}}</span> </td>
+                                  </tr>
+                                  <tr class="active">
+                                    <td>Nozzle Pump</td>
+                                    <td><span class="{{arrClimate?.cli_stt_nozzle}}">{{arrClimate?.cli_stt_nozzle}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_nozzle}}">{{arrClimate?.cli_stt_nozzle}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_nozzle}}">{{arrClimate?.cli_stt_nozzle}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_nozzle}}">{{arrClimate?.cli_stt_nozzle}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_nozzle}}">{{arrClimate?.cli_stt_nozzle}}</span> </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Shading Net System</td>
+                                    <td><span class="{{arrClimate?.cli_stt_shadingNet}}">{{arrClimate?.cli_stt_shadingNet}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_shadingNet}}">{{arrClimate?.cli_stt_shadingNet}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_shadingNet}}">{{arrClimate?.cli_stt_shadingNet}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_shadingNet}}">{{arrClimate?.cli_stt_shadingNet}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_shadingNet}}">{{arrClimate?.cli_stt_shadingNet}}</span> </td>
+                                  </tr>
+                                  <tr class="active">
+                                    <td>Ventilation Door</td>
+                                    <td><span class="{{arrClimate?.cli_stt_ventDoor}}">{{arrClimate?.cli_stt_ventDoor}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_ventDoor}}">{{arrClimate?.cli_stt_ventDoor}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_ventDoor}}">{{arrClimate?.cli_stt_ventDoor}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_ventDoor}}">{{arrClimate?.cli_stt_ventDoor}}</span> </td>
+                                    <td><span class="{{arrClimate?.cli_stt_ventDoor}}">{{arrClimate?.cli_stt_ventDoor}}</span> </td>
+                                  </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-6 -->
+                <div class="col-lg-6">
+                   
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3>Irrigation Control</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                  <tr class="info">
+                                    <th>Name</th>
+                                    <th>Value</th>
+                                    <th>Min day</th>
+                                    <th>Max day</th>
+                                    <th>Min month</th>
+                                    <th>Max month</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="active">
+                                    <td>PH</td>
+                                    <td>{{arrIrrigation?.irr_view_ph}}</td>
+                                    <td>{{arrIrrigationLog?.ph_min_day}}</td>
+                                    <td>{{arrIrrigationLog?.ph_max_day}}</td>
+                                    <td>{{arrIrrigationLog?.ph_min_month}}</td>
+                                    <td>{{arrIrrigationLog?.ph_max_month}}</td>
+                                  </tr>
+                                  <tr >
+                                    <td>EC</td>
+                                    <td>{{arrIrrigation?.irr_view_ec}}</td>
+                                    <td>{{arrIrrigationLog?.ec_min_day}}</td>
+                                    <td>{{arrIrrigationLog?.ec_max_day}}</td>
+                                    <td>{{arrIrrigationLog?.ec_min_month}}</td>
+                                    <td>{{arrIrrigationLog?.ec_max_month}}</td>
+                                  </tr>
+                                  <tr class="active">
+                                    <td>Water Temperature</td>
+                                    <td>{{arrIrrigation?.irr_view_waterTemp}}  &#8451;</td>
+                                    <td>{{arrIrrigationLog?.waterTemp_min_day}} &#8451;</td>
+                                    <td>{{arrIrrigationLog?.waterTemp_max_day}} &#8451;</td>
+                                    <td>{{arrIrrigationLog?.waterTemp_min_month}} &#8451;</td>
+                                    <td>{{arrIrrigationLog?.waterTemp_max_month}} &#8451;</td>
+                                  </tr>
+                                  <tr >
+                                    <td>Oxygen Concentration In Water</td>
+                                    <td>{{arrIrrigation?.irr_view_OxygenConc}} ppm</td>
+                                    <td>{{arrIrrigationLog?.OxygenConc_min_day}} ppm</td>
+                                    <td>{{arrIrrigationLog?.OxygenConc_max_day}} ppm</td>
+                                    <td>{{arrIrrigationLog?.OxygenConc_min_month}} ppm</td>
+                                    <td>{{arrIrrigationLog?.OxygenConc_max_month}} ppm</td>
+                                  </tr>
+                                  <tr class="active">
+                                    <td>Nutrition A Level</td>
+                                    <td>{{arrIrrigation?.nutrition_a_level}} %</td>
+                                    <td>{{arrIrrigationLog?.nutrition_a_min_day}} %</td>
+                                    <td>{{arrIrrigationLog?.nutrition_a_max_day}} %</td>
+                                    <td>{{arrIrrigationLog?.nutrition_a_min_month}} %</td>
+                                    <td>{{arrIrrigationLog?.nutrition_a_max_month}} %</td>
+                                  </tr>
+                                  <tr >
+                                    <td>Nutrition B Level</td>
+                                    <td>{{arrIrrigation?.nutrition_b_level}} %</td>
+                                    <td>{{arrIrrigationLog?.nutrition_b_min_day}} %</td>
+                                    <td>{{arrIrrigationLog?.nutrition_b_max_day}} %</td>
+                                    <td>{{arrIrrigationLog?.nutrition_b_min_month}} %</td>
+                                    <td>{{arrIrrigationLog?.nutrition_b_max_month}} %</td>
+                                  </tr>
+                                  <tr class="active">
+                                    <td>PH Level</td>
+                                    <td>{{arrIrrigation?.ph_level}} %</td>
+                                    <td>{{arrIrrigationLog?.ph_level_min_day}} %</td>
+                                    <td>{{arrIrrigationLog?.ph_level_max_day}} %</td>
+                                    <td>{{arrIrrigationLog?.ph_level_min_month}} %</td>
+                                    <td>{{arrIrrigationLog?.ph_level_max_month}} %</td>
+                                  </tr>
+                                  <tr >
+                                    <td>Water Tank Level</td>
+                                    <td>{{arrIrrigation?.water_tank_level}} %</td>
+                                    <td>{{arrIrrigationLog?.water_tank_level_min_day}} %</td>
+                                    <td>{{arrIrrigationLog?.water_tank_level_max_day}} %</td>
+                                    <td>{{arrIrrigationLog?.water_tank_level_min_month}} %</td>
+                                    <td>{{arrIrrigationLog?.water_tank_level_max_month}} %</td>
+                                  </tr>
+                                  <tr class="active">
+                                    <td>Nutrition Pump</td>
+                                    <td><span class="{{arrIrrigation?.irr_stt_nutrition}}">{{arrIrrigation?.irr_stt_nutrition}}</span> </td>
+                                    <td><span class="{{arrIrrigation?.irr_stt_nutrition}}">{{arrIrrigation?.irr_stt_nutrition}}</span> </td>
+                                    <td><span class="{{arrIrrigation?.irr_stt_nutrition}}">{{arrIrrigation?.irr_stt_nutrition}}</span> </td>
+                                    <td><span class="{{arrIrrigation?.irr_stt_nutrition}}">{{arrIrrigation?.irr_stt_nutrition}}</span> </td>
+                                    <td><span class="{{arrIrrigation?.irr_stt_nutrition}}">{{arrIrrigation?.irr_stt_nutrition}}</span> </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Chiller Pump</td>
+                                    <td><span class="{{arrIrrigation?.irr_stt_cliller}}">{{arrIrrigation?.irr_stt_cliller}}</span> </td>
+                                    <td><span class="{{arrIrrigation?.irr_stt_cliller}}">{{arrIrrigation?.irr_stt_cliller}}</span> </td>
+                                    <td><span class="{{arrIrrigation?.irr_stt_cliller}}">{{arrIrrigation?.irr_stt_cliller}}</span> </td>
+                                    <td><span class="{{arrIrrigation?.irr_stt_cliller}}">{{arrIrrigation?.irr_stt_cliller}}</span> </td>
+                                    <td><span class="{{arrIrrigation?.irr_stt_cliller}}">{{arrIrrigation?.irr_stt_cliller}}</span> </td>
+                                  </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-6 -->
+                <!-- /.col-lg-12 -->
+                <div class="col-lg-12 main-chart">
+                    <div class="row chart">
+                        <h3>Climate Report</h3>
+                        <div id="chartdivClimate" style="width: 100%; height: 500px;"></div>
+                    </div>
+                    <br>
+                    <br>
+                    
+                    <div class="row chart">
+                        <h3>Irrigation Report</h3>
+                        <div id="chartdivIrrigation" style="width: 100%; height: 500px;"></div> 
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="row chart">
+                        <h3>Irrigation Report</h3>
+                        <div id="chartdivIrrigationEx" style="width: 100%; height: 500px;"></div> 
+                    </div>
+                    
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>

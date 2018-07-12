@@ -1,0 +1,6 @@
+{"irrigations":[
+{"_id":{"$oid":"5a7b2c5570e58e0004e1da1c"},"server":"KCN Cát Lái - K1","code":"CTL1"},
+{"_id":{"$oid":"5a7b2c6c70e58e0004e1da20"},"server":"KCN Cát Lái - K3","code":"CTL2","irr_view_ph":"5.73","irr_view_ec":"1.50","irr_view_waterTemp":"0.00","irr_view_OxygenConc":"0.00","nutrition_a_level":"0.00","nutrition_b_level":"0.00","ph_level":"0.00","water_tank_level":"0.00","irr_stt_nutrition":"OPEN","irr_stt_cliller":"OPEN"},
+{"_id":{"$oid":"5a7b2c8770e58e0004e1da24"},"server":"KCN Cát Lái - K4","code":"CTL3","irr_view_ph":"5.73","irr_view_ec":"1.50","irr_view_waterTemp":"0.00","irr_view_OxygenConc":"0.00","nutrition_a_level":"0.00","nutrition_b_level":"0.00","ph_level":"0.00","water_tank_level":"0.00","irr_stt_nutrition":"OPEN","irr_stt_cliller":"OPEN"},
+{"_id":{"$oid":"5a7b2c9970e58e0004e1da28"},"server":"Container","code":"CTL4","irr_view_ph":"6.28","irr_view_ec":"18.73","irr_view_waterTemp":"0.00","irr_view_OxygenConc":"0.00","nutrition_a_level":"0.00","nutrition_b_level":"0.00","ph_level":"0.00","water_tank_level":"0.00","irr_stt_nutrition":"NW","irr_stt_cliller":"NW"}
+]}
